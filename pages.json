@@ -1,17 +1,42 @@
 {
-	"pages": [{
-		"path": "pages/index/index",
-		"style": {
-			"navigationBarTitleText": "uni-app"
-		}
-	}],
-	"globalStyle": {
-		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "uni-app",
-		"navigationBarBackgroundColor": "#F8F8F8",
-		"backgroundColor": "#F8F8F8",
-		"app-plus": {
-			"background": "#efeff4"
-		}
-	}
+  "pages": [{
+    "path": "pages/home/home",
+    "style": {
+      "navigationBarTitleText": "看见桃花源-首页",
+      "navigationBarBackgroundColor": "#ff934d",
+      "enablePullDownRefresh": false
+    }
+
+  }, {
+    "path": "pages/my/my",
+    "style": {
+      "navigationBarTitleText": "我的信息",
+      "navigationBarBackgroundColor": "#ff934d",
+      "enablePullDownRefresh": false
+    }
+
+  }],
+  "tabBar": {
+    "selectedColor": "#c00000",
+    "list": [{
+      "pagePath": "pages/home/home",
+      "text": "首页",
+      "iconPath": "static/tab_icons/home.png",
+      "selectedIconPath": "static/tab_icons/home-active.png"
+    }, {
+      "pagePath": "pages/my/my",
+      "text": "我的",
+      "iconPath": "static/tab_icons/my.png",
+      "selectedIconPath": "static/tab_icons/my-active.png"
+    }]
+  },
+  "globalStyle": {
+    "navigationBarTextStyle": "white",
+    // "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#FFFFFF",
+    "app-plus": {
+      "background": "#efeff4"
+    }
+  }
 }
